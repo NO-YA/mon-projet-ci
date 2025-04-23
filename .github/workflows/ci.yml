@@ -12,10 +12,10 @@ jobs:
          - name: 📥 Checkout du code
          uses: actions/checkout@v3
 
-        - name: 🔧 Installer Python
+         - name: 🔧 Installer Python
         uses: actions/setup-python@v5
         with:
-        python-version: '3.10'
+         python-version: '3.10'
 
         - name: 📦 Installer les dépendances
 
@@ -24,5 +24,5 @@ jobs:
           pip install pytest
 
          - name: 🧪 Lancer les tests
-         run: |
+        run: |
             pytest
